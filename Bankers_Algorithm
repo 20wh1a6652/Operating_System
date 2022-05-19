@@ -79,3 +79,24 @@ enter the values of Available in matrix form:
 3 3 2
 p1 p2 p3 p4 p0
 process is in safe state
+-------------------------------------------------
+enter the number of processes:
+5
+enter the number of resources:
+3
+enter the values of maximum in matrix form:
+0 1 0
+4 0 2
+3 0 4
+3 1 1
+0 0 4
+enter the values of Allocate in matrix form:
+0 1 0
+2 0 0
+3 0 3
+2 1 1
+0 0 2
+enter the values of Available:
+0 0 0
+p0
+process is not in safe state
