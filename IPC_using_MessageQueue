@@ -1,4 +1,4 @@
-reader
+------------Reader Process------------
 
 #include<stdio.h>
 #include<sys/ipc.h>
@@ -19,9 +19,10 @@ int main(){
         return 0;
 }
 
-Data Received is : hello
+output:    
+        Data Received is : hello
 
-writer
+--------------Writer Process-------------------
 #include<stdio.h>
 #include<sys/ipc.h>
 #include<sys/msg.h>
@@ -42,16 +43,7 @@ int main(){
         printf("Data send is : %s\n",message.mesg_text);
         return 0;
 }
-
-
-
-
-
-
-
-
-
-
-write Data:hello
-Data send is : hello
+output:
+        write Data:hello
+        Data send is : hello
 
