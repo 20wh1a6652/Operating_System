@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<fcntl.h>
+#include<sys/stat.h>
+#include<sys/types.h>
+#include<unistd.h>
+int main(){
+    char str[1000] = "Hello world", str1[1000];
+    int fd,fs,i =0;
+    char ch;
+    fd = open("abc.txt",O_CREAT | O_WRONLY | O_TRUNC);
+    if(fd != -1){
+        write(fd,str,sizeof(str));
+        close(fd);
+    }
+    fs = open("abc.txt",O_RDONLY);
+    if(fs != -1){
+        read(fs,str1,sizeof(str));
+        printf("%s was written to my file.",str1);
+        close(fs);
+    }   
+}
+output:
+Hello World was written to my file.
+
+---------abc.txt--------
+Hello WOrld
