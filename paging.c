@@ -34,3 +34,22 @@ int main(){
         printf("\n the physical address is: %d",pa);
     }
 }
+
+INPUT:
+
+Enter the memory size – 1000
+Enter the page size -- 100
+The no. of pages available in memory are -- 10
+Enter number of processes -- 3
+Enter no. of pages required for p[1] -- 4
+Enter pagetable for p[1] --- 8 6 9 5
+Enter no. of pages required for p[2] -- 5
+Enter pagetable for p[2] --- 1 4 5 7 3
+Enter no. of pages required for p[3] -- 5
+    
+OUTPUT:
+
+Memory is Full
+Enter Logical Address to find Physical Address
+Enter process no. and pagenumber and offset -- 2 3 60
+The Physical Address is -- 760
