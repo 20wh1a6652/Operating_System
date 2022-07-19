@@ -70,3 +70,35 @@ int main(){
     }
     
 }
+
+
+[user@localhost ~]$ cc seg.c
+[user@localhost ~]$ ./a.out
+
+Enter segment table
+Enter -1 as segmentation value for termination
+Enter segment number:1
+Enter base value:2000
+Enter value for limit:100
+Enter segment number:2
+Enter base value:2500
+Enter value for limit:100
+Enter segmentation number:-1
+Enter offset:90
+Enter segment number:2
+Address in physical memory 2590
+    
+[user@localhost ~]$ ./a.out
+
+Enter segment table
+Enter -1 as segmentation value for termination
+Enter segment number:1
+Enter base value:2000
+Enter value for limit:100
+Enter segment number:2
+Enter base value:2500
+Enter value for limit:100
+Enter segmentation number:-1
+Enter offset:90
+Enter segment number:1
+Address in physical memory 209
