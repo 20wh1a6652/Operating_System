@@ -101,4 +101,4 @@ Enter value for limit:100
 Enter segmentation number:-1
 Enter offset:90
 Enter segment number:1
-Address in physical memory 209
+Address in physical memory 2090
